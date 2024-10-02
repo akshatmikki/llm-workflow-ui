@@ -13,8 +13,8 @@ const initialNodes = [
 const initialEdges = [];
 
 function App() {
-  const [nodes, setNodes] = useState(initialNodes);
-  const [edges, setEdges] = useState(initialEdges);
+  const [nodes] = useState(initialNodes);
+  const [edges] = useState(initialEdges);
 
   const onConnect = useCallback((params) => setEdges((eds) => addEdge(params, eds)), []);
 
