@@ -16,7 +16,6 @@ function App() {
   const [nodes, setNodes] = useState(initialNodes);
   const [edges, setEdges] = useState(initialEdges);
 
-  // Handles the connections between nodes
   const onConnect = useCallback((params) => setEdges((eds) => addEdge(params, eds)), []);
 
   return (
