@@ -24,9 +24,9 @@ function App() {
       <ReactFlow
         nodes={nodes}
         edges={edges}
-        onConnect={onConnect} // Allowing node connections
+        onConnect={onConnect} 
         nodeTypes={{
-          inputNode: InputNode, // Custom components for nodes
+          inputNode: InputNode, 
           llmNode: LLMNode,
           outputNode: OutputNode,
         }}
